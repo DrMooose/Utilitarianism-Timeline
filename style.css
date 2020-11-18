@@ -3,89 +3,86 @@
 }
 
 body {
-    background-color: gray;
+    color: white;
+    background-color: rgb(75, 75, 75);
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color:white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(114, 114, 114);
+    padding: 3rem 4rem;
 }
 
-.content {
-    flex-grow: 5;
-    padding: 1rem 5rem;
-    border: solid red 2px;
-    position: static;
-}
-
-#a, #b, #c {
+.title {
     text-align: center;
+    grid-row: 1;
+    grid-column: 1 / 4;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
 }
 
-#b, #c {
-    display: none;
-}
-
-.butt {
-    text-align: center;
-}
-
-/*.collapsible {
-    background-color: #777;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 33%;
-    border: none;
-    outline: none;
-    font-size: 15px;
-}
-  
-.active, .collapsible:hover {
-    background-color: #555;
-}
-  
-.boo {
-    padding: 0 18px;
-    width: 33%;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-    text-align: left;
-}*/
-
-h4 {
-    text-align: center;
-    font-size: 20px;
-}
-
-img {
-    height: 25%;
-    width: 25%;
-    border: black solid 2px;
+.line {
+    background-color: white;
+    padding: .5px;
+    margin: 0 10rem;
+    border: solid white .5px;
+    border-radius: 30%;
 }
 
 p {
-    text-align: left;
+    font-size: 20px;
+    margin:1rem 3rem;
+    font-family: 'Roboto', sans-serif;
 }
 
-.timeline {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    justify-content: space-evenly;
-    border: solid blue 2px;
-}
-
-button {
-    background-color: rgb(156, 156, 156);
-    border: none;
-    padding: .5rem;
-    border-radius: 50%;
-}
-
-.woo {
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-around;
     text-align: center;
-    line-height: 0%;
+}
+
+.philos {
+    margin:1rem 3rem;
+    padding: .5rem;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#a {
+    background-color: red;
+}
+
+#b {
+    background-color: #A03267;
+}
+
+#c {
+    background-color: olive;
+}
+
+#d {
+    background-color: green;
+}
+
+#e {
+    background-color: navy;
+    
+}
+
+#f {
+    background-color: orange;
 }
