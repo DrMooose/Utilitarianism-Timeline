@@ -7,59 +7,77 @@ body {
     background-color: rgb(75, 75, 75);
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color:white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(75, 75, 75);
+    text-decoration: none;
+}
+
 .main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 2fr;
 }
 
 #rule {
-    background-color: rgb(133, 14, 14);
+    background-color: rgb(14, 14, 80);
     border-radius: 3rem;
     margin: 3rem 4rem;
 }
 
 #hedo {
-    background-color: #A03267;
+    background-color: rgb(82, 0, 82);
     border-radius: 3rem;
     margin: 3rem 4rem;
 }
 
 #mean {
-    background-color: olive;
+    background-color:  gray;
     border-radius: 3rem;
     margin: 3rem 4rem;
 }
 
 #cate {
-    background-color: rgb(7, 61, 7);
+    background-color: rgb(133, 14, 14);
     border-radius: 3rem;
     margin: 3rem 4rem;
 }
 
 #util {
-    background-color: rgb(11, 11, 53);
+    background-color: rgb(15, 92, 15);
     border-radius: 3rem;
     margin: 3rem 4rem;
 }
 
 #veil {
-    background-color: rgb(192, 135, 31);
+    background-color: rgb(180, 157, 25);
     border-radius: 3rem;
     margin: 3rem 4rem;
 }
 
 header {
     grid-row: 1;
-    grid-column: 1 / 3;
+    grid-column: 1 / 5;
     font-family: 'Poppins', sans-serif;
 }
 
+#arrow {
+    grid-row: 1;
+    grid-column: 1 / 2;
+}
+
 .title {
-    text-align: center;
+    margin-left: 2rem;
     font-size: 70px;
     padding: 1rem 2rem;
-
 }
 
 .line {
@@ -68,20 +86,36 @@ header {
     margin: 0 10rem;
     border: solid white .5px;
     border-radius: 30%;
+}
 
+.meaning {
+    font-size: 20px;
+    text-align: center;
+    padding: .5px;
+    margin: 1rem 10rem 0 10rem;
+    font-style: italic;
 }
 
 .images {
     text-align: center;
+    grid-column: 1 / 3;
 }
 
 img {
+    margin-top: 1.3rem;
     box-shadow: 1px 1px 3px black;
+    
+}
+
+h5 {
+    text-decoration: underline;
+    font-style: italic;
 }
 
 .words {
     padding: 0 5rem 0 0;
     color: white;
+    grid-column: 3 / 5;
 }
 
 .content {
@@ -89,7 +123,7 @@ img {
 }
 
 p {
-    font-size: 17px;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
-    line-height: 1.3rem;
+    line-height: 1.4rem;
 }

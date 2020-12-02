@@ -1,0 +1,7 @@
+•better title(done)
+•define each philosophy with a source(done?)
+•example for golden mean(done)
+•a bibliography(done-ish)
+•a way for users to easily return to the homepage(done)
+•align the top of a picture with the start of the text(done)
+•What is the justification for the color associated with the philosophy?(done)
